@@ -1702,7 +1702,7 @@
             <div class="container">
                 <div class="header-main-content">
                     <div class="logo-section">
-                        <a href="/"><img src="images/logo.png" alt="PhysioNutra Clinic Logo" class="logo" width="200" height="60"></a>
+                        <a href="/"><img src="/images/logo.png" alt="PhysioNutra Clinic Logo" class="logo" width="200" height="60"></a>
                         <div class="tagline">Dr Tarun's PhysioNutra Clinic</div>
                     </div>
                     <nav role="navigation" aria-label="Main navigation">
@@ -1921,7 +1921,7 @@
             
             <div class="conditions-grid">
                 <div class="condition-card">
-                    <img src="images/conditions/Sciatica.jpg" alt="Sciatica Treatment" class="condition-image" loading="lazy" width="400" height="200">
+                    <img src="/images/conditions/Sciatica.jpg" alt="Sciatica Treatment" class="condition-image" loading="lazy" width="400" height="200">
                     <div class="condition-content">
                         <h3><a href="/blogs/sciatica-pain-relief/">Sciatica Pain Relief</a></h3>
                         <p>Comprehensive treatment for sciatic nerve pain with proven physiotherapy techniques and exercises.</p>
@@ -1929,7 +1929,7 @@
                 </div>
 
                 <div class="condition-card">
-                    <img src="images/conditions/Frozen_shoulder.jpg" alt="Frozen Shoulder Treatment" class="condition-image" loading="lazy" width="400" height="200">
+                    <img src="/images/conditions/Frozen_shoulder.jpg" alt="Frozen Shoulder Treatment" class="condition-image" loading="lazy" width="400" height="200">
                     <div class="condition-content">
                         <h3><a href="/blogs/frozen-shoulder-treatment-chandigarh/">Frozen Shoulder</a></h3>
                         <p>Advanced treatment for adhesive capsulitis to restore shoulder movement and eliminate pain.</p>
@@ -1937,7 +1937,7 @@
                 </div>
 
                 <div class="condition-card">
-                    <img src="images/conditions/Knee_Osteoarthritis.jpg" alt="Knee Arthritis Treatment" class="condition-image" loading="lazy" width="400" height="200">
+                    <img src="/images/conditions/Knee_Osteoarthritis.jpg" alt="Knee Arthritis Treatment" class="condition-image" loading="lazy" width="400" height="200">
                     <div class="condition-content">
                         <h3><a href="/blogs/knee-osteoarthritis-blog/">Knee Osteoarthritis</a></h3>
                         <p>Specialized care for knee arthritis to reduce pain and improve mobility without surgery.</p>
@@ -1945,7 +1945,7 @@
                 </div>
 
                 <div class="condition-card">
-                    <img src="images/conditions/Lowback_pain.jpg" alt="Lower Back Pain Treatment" class="condition-image" loading="lazy" width="400" height="200">
+                    <img src="/images/conditions/Lowback_pain.jpg" alt="Lower Back Pain Treatment" class="condition-image" loading="lazy" width="400" height="200">
                     <div class="condition-content">
                         <h3><a href="/blogs/chronic-back-pain-management/">Chronic Back Pain</a></h3>
                         <p>Comprehensive treatment for acute and chronic lower back pain with proven techniques.</p>
@@ -1953,7 +1953,7 @@
                 </div>
 
                 <div class="condition-card">
-                    <img src="images/conditions/CERVICAL_PAIN.jpg" alt="Cervical Pain Treatment" class="condition-image" loading="lazy" width="400" height="200">
+                    <img src="/images/conditions/CERVICAL_PAIN.jpg" alt="Cervical Pain Treatment" class="condition-image" loading="lazy" width="400" height="200">
                     <div class="condition-content">
                         <h3><a href="/blogs/cervical-pain-management/">Cervical Pain</a></h3>
                         <p>Effective neck pain treatment with manual therapy, exercises, and posture correction.</p>
@@ -1961,7 +1961,7 @@
                 </div>
 
                 <div class="condition-card">
-                    <img src="images/conditions/Tennis_Elbow.jpg" alt="Sports Injury Treatment" class="condition-image" loading="lazy" width="400" height="200">
+                    <img src="/images/conditions/Tennis_Elbow.jpg" alt="Sports Injury Treatment" class="condition-image" loading="lazy" width="400" height="200">
                     <div class="condition-content">
                         <h3><a href="/blogs/sports-physiotherapy/">Sports Injuries</a></h3>
                         <p>Specialized therapy for athletic injuries including tennis elbow, ACL tears, and more.</p>
@@ -2210,7 +2210,7 @@
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2025 <a href="/">PhysioNutra Clinic</a>. All Rights Reserved.</p>
+                <p>&copy; <span id="current-year"></span> <a href="/">PhysioNutra Clinic</a>. All Rights Reserved.</p>
                 <p style="margin-top: 0.5rem;">Best Physiotherapy in Zirakpur | Serving Chandigarh, Mohali & Panchkula</p>
             </div>
         </div>
@@ -2226,6 +2226,9 @@
     </div>
 
     <script>
+        // Update copyright year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
         // Mobile menu toggle
         const menuToggle = document.querySelector('.mobile-menu-toggle');
         const mainMenu = document.getElementById('mainMenu');
